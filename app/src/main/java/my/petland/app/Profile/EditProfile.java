@@ -126,7 +126,7 @@ public class EditProfile extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if(snapshot.exists()){
-                            Toast.makeText(EditProfile.this, "Username already exists. Please try other username.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditProfile.this, "Username đã được sử dụng. Vui lòng thử lại!.", Toast.LENGTH_SHORT).show();
                         }else{
                             useridd = FirebaseAuth.getInstance().getCurrentUser().getUid();
                             data = FirebaseDatabase.getInstance().getReference("Users").child(useridd);
@@ -135,7 +135,7 @@ public class EditProfile extends AppCompatActivity {
                                 public void onDataChange(@NonNull DataSnapshot snapshot) { final ProgressDialog mDialog = new ProgressDialog(EditProfile.this);
                                     mDialog.setCancelable(false);
                                     mDialog.setCanceledOnTouchOutside(false);
-                                    mDialog.setMessage("Updating please wait...");
+                                    mDialog.setMessage("Vui lòng chờ...");
                                     mDialog.show();
                                     data.child("fullName").setValue(Name);
                                     data.child("username").setValue(Username);
@@ -165,8 +165,8 @@ public class EditProfile extends AppCompatActivity {
 
 
                                     mDialog.dismiss();
-                                    Toast.makeText(EditProfile.this, "Profile Updated Successfully!", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(EditProfile.this,Account_Settings.class));
+                                    Toast.makeText(EditProfile.this, "Profile cập nhật thành công!", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(EditProfile.this, Account_Settings.class));
                                     finish();
 
                                 }
