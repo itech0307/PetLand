@@ -5,7 +5,7 @@
 ## PETLAND - Social Network for Pet Lover
 
 It has the most primitive functions of a social network like Instagram,...
-This project is developed from *https://github.com/Mufaddal5253110/Instagram-clone.git*. In addition, I develop additional functions separately. Thanks the author!
+This project is developed from *@Mufaddal5253110*. In addition, I develop additional functions separately. Thanks the author!
 
 ## Features
 1. Sign up/ Sign in.
