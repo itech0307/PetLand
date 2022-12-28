@@ -16,7 +16,7 @@ This project is developed from *@Mufaddal5253110*. In addition, I develop additi
 6. Simple texting with friends(only message emoji, text). Can't send photos to friends yet :((
 7. Search for users based on username.
 8. Create/Delete/View Story and and automatically disappear after 24 hours. You can see who has viewed your story.
-9. Offline Capability (I have not tested this function yet:))
+9. Offline Capability (I haven't tested this function yet:))
 10. Look up nearby pet care locations(currently in development...).
 
 
